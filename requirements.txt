@@ -96,7 +96,6 @@ pycparser==2.21
 pydeck==0.8.1b0
 Pygments==2.15.1
 Pympler==1.0.1
-pyparsing==3.0.9
 pywin32==306
 pywinpty==2.0.10
 PyYAML==6.0
