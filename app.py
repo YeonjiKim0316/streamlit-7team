@@ -16,6 +16,7 @@ from data_loader import data_loader
 from visualization import main_image
 import base64
 from pathlib import Path
+from streamlit_folium import st_folium
 
 plt.rc('font', family='NanumGothic') # For Windows
 print(plt.rcParams['font.family'])
@@ -90,7 +91,7 @@ if choose == 'Main':
     key_on = 'properties.SIG_KOR_NM'
     ).add_to(map)
 
-    map
+    st_data = st_folium(map, width=725)
 
 # 구별 배달건수
 if choose == '구별':
